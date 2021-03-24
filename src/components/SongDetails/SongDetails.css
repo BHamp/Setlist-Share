@@ -1,0 +1,17 @@
+.remove-song {
+  position: relative;
+  text-align: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.artist {
+  font-size: 0.9em;
+  color: #ddd;
+}
