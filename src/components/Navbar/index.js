@@ -7,7 +7,7 @@ const Navbar = () => {
     return ( 
         <div className='navbar'>
             <h1>Show Set List</h1>
-            <p>Currently you have {songs.length} songs in the set</p>
+            <p>Currently you have {songs.length} song(s) in the set</p>
         </div>
      );
 }
