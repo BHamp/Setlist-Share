@@ -3,12 +3,14 @@ import {SongContext} from '../../contexts/SongContext'
 import './SongForm.css'
 
 const NewSongForm = () => {
-    const {addSong} = useContext(SongContext)
+    const { dispatch } = useContext(SongContext)
     const [title, setTitle] = useState('')
     const [artist, setArtist] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault();
-        addSong(title, artist)
+        dispatch({type: 'ADD_SONG', song: {
+            title, artist
+        }})
         setTitle('');
         setArtist('')
     }
